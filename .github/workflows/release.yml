@@ -33,4 +33,6 @@ jobs:
       - name: Push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: git push origin HEAD:main --follow-tags
+        run: |
+          git push
+          git push --tags
