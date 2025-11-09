@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const fs = require('node:fs/promises');
-const path = require('node:path');
-const os = require('node:os');
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
 
 const BASE_URL = 'https://chatgpt.com/backend-api';
 const REFRESH_ENDPOINT =
