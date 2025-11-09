@@ -387,12 +387,24 @@ function base64UrlDecode(segment) {
 }
 
 function printUsage() {
-  console.log(
-    'Usage: node scripts/codex_status.js [--tail] [--json] --auth=/path/to/auth.json [--auth=/path/to/other.json]\n' +
-      'Reads one or more Codex auth.json files, refreshes expired ChatGPT tokens when needed, and prints rate-limit stats for each.\n' +
-      'When --tail is provided, the display refreshes every 30 seconds in place (press q to exit).\n' +
-      'When --json is provided, a single JSON payload is printed and the program exits.',
-  );
+  const lines = [
+    'codex_status.js - Inspect ChatGPT usage rate limits from auth.json files',
+    '',
+    'Usage:',
+    '  node codex_status.js [OPTIONS]',
+    '',
+    'Options:',
+    '  --auth <path>        Path to a Codex auth.json file (repeatable). Defaults to ~/.codex/auth.json.',
+    '  --tail               Refresh every 30s in-place (press q or Ctrl+C to exit). Ignored with --json.',
+    '  --json               Output the raw JSON payload once and exit.',
+    '  -h, --help           Show this help message and exit.',
+    '',
+    'Examples:',
+    '  node codex_status.js --auth ~/.codex/auth.json',
+    '  node codex_status.js --tail --auth ~/.codex/auth.json --auth /tmp/other.json',
+    '  node codex_status.js --json',
+  ];
+  console.log(lines.join('\n'));
 }
 
 function renderResults(entries, { clearFirst }) {
