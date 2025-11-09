@@ -1,6 +1,6 @@
 {
   "name": "codex-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool to check Codex usage.",
   "main": "index.mjs",
   "type": "module",
