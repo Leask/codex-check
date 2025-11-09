@@ -388,10 +388,10 @@ function base64UrlDecode(segment) {
 
 function printUsage() {
   const lines = [
-    'codex_status.js - A simple tool to check Codex usage',
+    'codex-check - A simple tool to check Codex usage',
     '',
     'Usage:',
-    '  node codex_status.js [OPTIONS]',
+    '  node index.mjs [OPTIONS]',
     '',
     'Options:',
     '  --auth <path>        Path to a Codex auth.json file (repeatable). Defaults to ~/.codex/auth.json.',
@@ -400,9 +400,9 @@ function printUsage() {
     '  -h, --help           Show this help message and exit.',
     '',
     'Examples:',
-    '  node codex_status.js --auth ~/.codex/auth.json',
-    '  node codex_status.js --tail --auth ~/.codex/auth.json --auth /tmp/other.json',
-    '  node codex_status.js --json',
+    '  node index.mjs --auth ~/.codex/auth.json',
+    '  node index.mjs --tail --auth ~/.codex/auth.json --auth /tmp/other.json',
+    '  node index.mjs --json',
   ];
   console.log(lines.join('\n'));
 }

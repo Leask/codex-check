@@ -1,7 +1,7 @@
 {
   "name": "codex-check",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple tool to check Codex usage.",
   "main": "index.mjs",
   "type": "module",
   "bin": {
@@ -13,5 +13,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
