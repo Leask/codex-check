@@ -2,6 +2,8 @@
 
 A simple tool to check Codex usage and monitor ChatGPT/Codex rate limits from Codex CLI `auth.json` files.
 
+<img width="449" height="269" alt="Screenshot 2025-11-09 at 2 46 28 AM" src="https://github.com/user-attachments/assets/ea80a531-f38c-4d62-9440-ad5435201339" />
+
 ## Features
 
 - Display rate-limit windows with progress bars.
